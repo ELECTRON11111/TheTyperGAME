@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Typer Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:radial-gradient(white,lawngreen)
+        }
+        .container{
+            background-color: lawngreen;
+            padding-right: 80px; 
+            padding: 20px;
+            justify-content: space-around;
+            border: 2px solid black;
+            border-radius: 1.2em;
+            display: block;
+            /* padding: 30px; */
+            margin: 35vh;
+        }
+    </style> -->
+    <style>
+        .container{
+            margin-top: 1.8em;
+        }
+    </style>
+</head>
+<body>
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h1>Daniel's Typing Game ...</h1>
+            <p class="lead">This is scored based on the number of words you type before the timer runs out.Good luck!</p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Time Left: <span id="time">7</span>s</p>
+            <h3 id="word">smart</h3>
+            <div class="form-label-group">
+                <input type="text" id="result" class="form-control" placeholder="Enter Word" required autofocus>
+            <!-- <label for="result">Email address</label> -->
+            </div>
+            <br>
+            <br>
+            <a class="btn btn-lg btn-primary" href="/" role="button">Reload &raquo;</a>
+        </div>
+      </main>
+    <div class="container">
+        <!-- <h1 id="name" style="font: sans-serif;">The Typer</h1> -->
+        <select id="difficulty" style="display: none;">
+            <option id="easy">Easy</option>
+            <option id="intermediate">Intermediate</option>
+            <option id="hard">Hard</option>
+        </select>
+        
+        <!-- <input type="text" id="result" placeholder="Enter Word"> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+<script src="app.js"></script>
+</html>
